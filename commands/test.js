@@ -15,6 +15,6 @@ module.exports = {
    * @returns {Promise<void>}
    */
   async execute(interaction) {
-    interaction.reply({ content: "pong!",  ephemeral: true});
+    interaction.reply({ content: "pong",  ephemeral: true});
   },
 };
