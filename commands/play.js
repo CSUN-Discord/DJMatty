@@ -42,7 +42,9 @@ module.exports = {
     let song = null;
 
     playlistSong = await queue.playlist(songName, {requestedBy: interaction.user}).catch(async playlistResponse => {
+      console.log(playlistResponse)
       song = await queue.play(songName, {requestedBy: interaction.user}).catch(songResponse => {
+        console.log(songResponse)
         return interaction.followUp({content: "There was a problem playing this track."})
       });
     });
