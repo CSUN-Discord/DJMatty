@@ -9,7 +9,7 @@ module.exports = {
    * @param {Client} client
    */
   async execute(client) {
-    client.user.setActivity("to the radio.", {
+    client.user.setActivity("the radio.", {
       type: "LISTENING",
     });
 
